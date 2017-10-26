@@ -78,8 +78,7 @@ class Report extends CI_Controller {
       $data['Downhole'] = $this->Diamonddrilling_model->ViewDownhole($start,$end,$site,$location,$rig,$status);
       $data['Survey'] = $this->Diamonddrilling_model->ViewSurvey($start,$end,$site,$location,$rig,$status);
       $data['Drilling'] = $this->Diamonddrilling_model->ViewDrilling($start,$end,$site,$location,$rig,$status);
-      
-      
+    
       
       $this->load->view('RCoperation/Report',$data);
     }
@@ -137,7 +136,7 @@ public function Delete_multiple_Manpower()
 		if ($this->session->userdata('Drilling')) {
 			
 			$this->RCoperation_model->DeleteMultipleConsumable();
-				$data['main'] = "InputDiamonddrilling";
+				$data['main'] = "InputRCoperation";
         $data['Site'] = $this->Reference_model->getSite();
         $data['Location'] = $this->Reference_model->getLocationTes();
         $data['Rig'] = $this->Reference_model->getRigTes();
@@ -184,7 +183,7 @@ public function Delete_multiple_Manpower()
     if ($this->session->userdata('Drilling')) {
       
       $this->RCoperation_model->DeleteMultipleActivity();
-        $data['main'] = "InputDiamonddrilling";
+        $data['main'] = "InputRCoperation";
         $data['Site'] = $this->Reference_model->getSite();
         $data['Location'] = $this->Reference_model->getLocationTes();
         $data['Rig'] = $this->Reference_model->getRigTes();
@@ -229,7 +228,7 @@ public function Delete_multiple_Manpower()
     if ($this->session->userdata('Drilling')) {
       
       $this->RCoperation_model->DeleteMultipleDownhole();
-        $data['main'] = "InputDiamonddrilling";
+        $data['main'] = "InputRCoperation";
         $data['Site'] = $this->Reference_model->getSite();
         $data['Location'] = $this->Reference_model->getLocationTes();
         $data['Rig'] = $this->Reference_model->getRigTes();
@@ -275,7 +274,7 @@ public function Delete_multiple_Manpower()
     if ($this->session->userdata('Drilling')) {
       
        $this->RCoperation_model->DeleteMultipleSurvey();
-        $data['main'] = "InputDiamonddrilling";
+        $data['main'] = "InputRCoperation";
         $data['Site'] = $this->Reference_model->getSite();
         $data['Location'] = $this->Reference_model->getLocationTes();
         $data['Rig'] = $this->Reference_model->getRigTes();
@@ -320,7 +319,7 @@ public function Delete_multiple_Manpower()
     if ($this->session->userdata('Drilling')) {
       
       $this->RCoperation_model->DeleteMultipleDetails();
-        $data['main'] = "InputDiamonddrilling";
+        $data['main'] = "InputRCoperation";
         $data['Site'] = $this->Reference_model->getSite();
         $data['Location'] = $this->Reference_model->getLocationTes();
         $data['Rig'] = $this->Reference_model->getRigTes();
