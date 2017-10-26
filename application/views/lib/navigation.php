@@ -91,12 +91,12 @@
                 <li><a href="<?php echo base_url().'Reference/Location'?>"> Location</a></li>
                 <li><a href="<?php echo base_url().'Reference/Rig'?>"> Rig</a></li>
               </ul>
-                <li class="nav-parent">
+            <!--     <li class="nav-parent">
               <a href="#"><i class="icon-layers"></i><span>ANNUAL REPORT</span> <span class="fa arrow"></span></a>
               <ul class="children collapse">
               
               </ul>
-            </li>
+            </li> -->
            
           
           <div class="sidebar-footer clearfix">
