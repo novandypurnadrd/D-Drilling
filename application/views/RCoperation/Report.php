@@ -139,7 +139,7 @@
                   <table class="table table-hover table-dynamic">
                     <thead>
                       <tr>
-                       <th width="10px"><center> <div class="checkbox">
+                       <th width="10px"><center> <div class="checkbox checkbox-danger">
                                                 <input type="checkbox" id="checkAll" name="checkAll" >
                                                 <label></label>
                                             </div></center></th>
@@ -166,7 +166,7 @@
                                       <!--  <?php //if ($this->session->userdata('roleDrilling') == "Admin" || $this->session->userdata('Drilling')): ?>
                                     <td class="center">
                                     <center>
-                                   
+                                     
                                                                              <a class="btn btn-xs btn-success" href="<?php //echo base_url().'Assay/Update/pageUpdate/'.$manpower->id ?>" >
                                                                             <span class="fa fa-pencil"></span>
                                        </a>
@@ -257,7 +257,7 @@
                                                 <label></label>
                                             </div></center></th>
                                              <?php if ($this->session->userdata('roleDrilling') == "Admin") : ?>
-                                            <th width="10px">Action</th>
+                                            <!-- <th width="10px">Action</th> -->
                                             <?php endif; ?>
                        
                         <th>Date</th>
@@ -273,19 +273,16 @@
                                          <td><center> <div class="checkbox checkbox-danger">
                                                 <input type="checkbox" id="checkAll" name="msg[]" value="<?php echo $consumable->id; ?>">
                                                 <label></label><center> </td>
-                                       <?php if ($this->session->userdata('roleDrilling') == "Admin" || $this->session->userdata('Drilling')): ?>
+                                     <!--   <?php //if ($this->session->userdata('roleDrilling') == "Admin" || $this->session->userdata('Drilling')): ?>
                                     <td class="center">
                                     <center>
-                                      <!--<a>
-                                      <button type="button" class="btn btn-xs btn-danger" data-toggle="modal" data-target="#<?php //echo $table->id; ?>"><span class="fa fa-trash"></span>
-                                      </button>
-                                      </a>-->
-                                                                             <a class="btn btn-xs btn-success" href="<?php echo base_url().'Assay/Update/pageUpdate/'.$consumable->id ?>" >
+                                     
+                                                                             <a class="btn btn-xs btn-success" href="<?php //echo base_url().'Assay/Update/pageUpdate/'.$consumable->id ?>" >
                                                                             <span class="fa fa-pencil"></span>
                                        </a>
                                     </center>
                                   </td> 
-                                                                     <?php endif; ?> 
+                                                                     <?php //endif; ?>  -->
                                          
                                             <td><?php echo $consumable->date; ?></td>
                                             <td><?php echo $consumable->consumable; ?></td>
@@ -367,7 +364,7 @@
                                                 <label></label>
                                             </div></center></th>
                                              <?php if ($this->session->userdata('roleDrilling') == "Admin") : ?>
-                                            <th width="10px">Action</th>
+                                           <!--  <th width="10px">Action</th> -->
                                             <?php endif; ?>
                        
                         <th>Date</th>
@@ -385,20 +382,17 @@
                                          <td><center> <div class="checkbox checkbox-danger">
                                                 <input type="checkbox" id="checkAll" name="msg[]" value="<?php echo $activity->id; ?>">
                                                 <label></label><center> </td>
-                                       <?php if ($this->session->userdata('roleDrilling') == "Admin" || $this->session->userdata('Drilling')): ?>
+                                      <!--  <?php //if ($this->session->userdata('roleDrilling') == "Admin" || $this->session->userdata('Drilling')): ?>
                                     <td class="center">
                                     <center>
-                                      <!--<a>
-                                      <button type="button" class="btn btn-xs btn-danger" data-toggle="modal" data-target="#<?php //echo $table->id; ?>"><span class="fa fa-trash"></span>
-                                      </button>
-                                      </a>-->
-                                                                             <a class="btn btn-xs btn-success" href="<?php echo base_url().'Assay/Update/pageUpdate/'.$activity->id ?>" >
+                                   
+                                                                             <a class="btn btn-xs btn-success" href="<?php //echo base_url().'Assay/Update/pageUpdate/'.$activity->id ?>" >
                                                                             <span class="fa fa-pencil"></span>
                                        </a>
                                     </center>
                                   </td> 
-                                                                     <?php endif; ?> 
-                                         
+                                                                     <?php //endif; ?> 
+                                          -->
                                             <td><?php echo $activity->date; ?></td>
                                             <td><?php echo $activity->activity; ?></td>
                                             <td><?php echo $activity->subactivity; ?></td>
@@ -481,7 +475,7 @@
                                                 <label></label>
                                             </div></center></th>
                                              <?php if ($this->session->userdata('roleDrilling') == "Admin") : ?>
-                                            <th width="10px">Action</th>
+                                           <!--  <th width="10px">Action</th> -->
                                             <?php endif; ?>
                        
                         <th>Date</th>
@@ -499,20 +493,17 @@
                                          <td><center> <div class="checkbox checkbox-danger">
                                                 <input type="checkbox" id="checkAll" name="msg[]" value="<?php echo $downhole->id; ?>">
                                                 <label></label><center> </td>
-                                       <?php if ($this->session->userdata('roleDrilling') == "Admin" || $this->session->userdata('Drilling')): ?>
+                                  <!--      <?php //if ($this->session->userdata('roleDrilling') == "Admin" || $this->session->userdata('Drilling')): ?>
                                     <td class="center">
                                     <center>
-                                      <!--<a>
-                                      <button type="button" class="btn btn-xs btn-danger" data-toggle="modal" data-target="#<?php //echo $table->id; ?>"><span class="fa fa-trash"></span>
-                                      </button>
-                                      </a>-->
-                                                                             <a class="btn btn-xs btn-success" href="<?php echo base_url().'Assay/Update/pageUpdate/'.$downhole->id ?>" >
+                                     
+                                                                             <a class="btn btn-xs btn-success" href="<?php //echo base_url().'Assay/Update/pageUpdate/'.$downhole->id ?>" >
                                                                             <span class="fa fa-pencil"></span>
                                        </a>
                                     </center>
                                   </td> 
-                                                                     <?php endif; ?> 
-                                         
+                                                                     <?php //endif; ?> 
+                                          -->
                                             <td><?php echo $downhole->date; ?></td>
                                             <td><?php echo $downhole->description; ?></td>
                                             <td><?php echo $downhole->type; ?></td>
@@ -580,7 +571,7 @@
           </form>
 
 
-         
+          
 
            <form class="form-horizontal" method="post" action="<?php echo base_url().'RCoperation/Report/Delete_multiple_Details' ?>">
            <div class="row">
@@ -598,10 +589,10 @@
                                                 <label></label>
                                             </div></center></th>
                                              <?php if ($this->session->userdata('roleDrilling') == "Admin") : ?>
-                                            <th width="10px">Action</th>
+                                           <!--  <th width="10px">Action</th> -->
                                             <?php endif; ?>
                        
-                        <th>Date</th>
+                       <th>Date</th>
                         <th>Shift</th>
                         <th>Hole</th>
                         <th>From</th>
@@ -620,19 +611,16 @@
                                          <td><center> <div class="checkbox checkbox-danger">
                                                 <input type="checkbox" id="checkAll" name="msg[]" value="<?php echo $drilling->id; ?>">
                                                 <label></label><center> </td>
-                                       <?php if ($this->session->userdata('roleDrilling') == "Admin" || $this->session->userdata('Drilling')): ?>
+                                   <!--     <?php //if ($this->session->userdata('roleDrilling') == "Admin" || $this->session->userdata('Drilling')): ?>
                                     <td class="center">
                                     <center>
-                                      <!--<a>
-                                      <button type="button" class="btn btn-xs btn-danger" data-toggle="modal" data-target="#<?php //echo $table->id; ?>"><span class="fa fa-trash"></span>
-                                      </button>
-                                      </a>-->
-                                                                             <a class="btn btn-xs btn-success" href="<?php echo base_url().'Assay/Update/pageUpdate/'.$drilling->id ?>" >
+                                  
+                                                                             <a class="btn btn-xs btn-success" href="<?php //echo base_url().'Assay/Update/pageUpdate/'.$drilling->id ?>" >
                                                                             <span class="fa fa-pencil"></span>
                                        </a>
                                     </center>
                                   </td> 
-                                                                     <?php endif; ?> 
+                                                                     <?php //endif; ?>  -->
                                          
                                             <td><?php echo $drilling->date; ?></td>
                                             <td><?php echo $drilling->shift; ?></td>
@@ -640,13 +628,9 @@
                                             <td><?php echo $drilling->from; ?></td>
                                             <td><?php echo $drilling->to; ?></td>
                                             <td><?php echo $drilling->total; ?></td>
-                                            <td><?php echo $drilling->recovery; ?></td>
                                             <td><?php echo $drilling->hours; ?></td>
                                             <td><?php echo $drilling->hoursto; ?></td>
-                                            <td><?php echo $drilling->bit; ?></td>
-                                            <td><?php echo $drilling->series; ?></td>
-                                            <td><?php echo $drilling->size; ?></td>
-                                            <td><?php echo $drilling->angle; ?></td>
+                                        
                                             <td><?php echo $drilling->comment; ?></td>
                                             
                                        </tr>
@@ -728,11 +712,11 @@
     <!-- END PRELOADER -->
     <a href="#" class="scrollup"><i class="fa fa-angle-up"></i></a> 
     <?php $this->load->view('lib/footlib') ?>
-    <script src="<?php echo base_url();?>assets/js/jquery.chained.min.js"></script>
-  </body>
+   
+
   <script type="text/javascript">
 
-   $("#subactivity").chained("#activity");
+ 
 
     function SetValueManpower() {
         var masterDateStart = document.getElementById("start");
@@ -859,6 +843,9 @@
      
 
   </script>
+
+
+  </body>
 
   
 </html>
