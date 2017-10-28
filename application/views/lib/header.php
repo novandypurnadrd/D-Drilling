@@ -11,21 +11,16 @@
               <!-- BEGIN USER DROPDOWN -->
               <li class="dropdown" id="user-header">
                 <a href="#" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                <img src="<?php echo base_url();?>assets/global/images/avatars/user1.png" alt="user image">
-                <span class="username">Hi, John Doe</span>
+                <img src="<?php echo base_url();?>assets/global/images/avatars/avatar1.png" alt="user image">
+                <span class="username"><?php echo $this->session->userdata('nameDrilling'); ?></span>
                 </a>
                 <ul class="dropdown-menu">
+                
                   <li>
-                    <a href="#"><i class="icon-user"></i><span>My Profile</span></a>
+                    <a href="<?php echo base_url().'Drilling/Profile' ;?>"><i class="icon-settings"></i><span>Change Password</span></a>
                   </li>
                   <li>
-                    <a href="#"><i class="icon-calendar"></i><span>My Calendar</span></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="icon-settings"></i><span>Account Settings</span></a>
-                  </li>
-                  <li>
-                    <a href="<?php echo base_url().'Eplod/Logout' ;?>"><i class="icon-logout"></i><span>Logout</span></a>
+                    <a href="<?php echo base_url().'Drilling/Logout' ;?>"><i class="icon-logout"></i><span>Logout</span></a>
                   </li>
                 </ul>
               </li>
