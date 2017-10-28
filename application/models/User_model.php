@@ -14,7 +14,7 @@
 		}
 
 		function updateProfile($data){
-			$this->db->where('username', $this->session->userdata('usernameDBRC'));
+			$this->db->where('username', $this->session->userdata('usernameDrilling'));
 			$this->db->update('user.account',$data);
 		}
 
